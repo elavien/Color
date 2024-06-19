@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Coloring</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="canvas-container">
+        <svg id="drawingSVG" width="800" height="600" viewBox="0 0 800 600">
+            <!-- Приклад векторизованого SVG -->
+            <rect x="100" y="100" width="200" height="200" fill="#FFFFFF" stroke="#000000" data-color="1"></rect>
+            <rect x="400" y="100" width="200" height="200" fill="#FFFFFF" stroke="#000000" data-color="2"></rect>
+        </svg>
+    </div>
+    <div id="color-palette">
+        <div class="color" style="background-color: red;" data-color="#FF0000"></div>
+        <div class="color" style="background-color: green;" data-color="#00FF00"></div>
+        <div class="color" style="background-color: blue;" data-color="#0000FF"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
